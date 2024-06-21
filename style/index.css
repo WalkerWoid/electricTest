@@ -1,0 +1,101 @@
+@import "./fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white-color: #ffffff;
+    --white-color2: #F1F1F1;
+    --header-color: #01237D;
+    --gray-line-color: #D7DCE7;
+    --border: linear-gradient(224.82deg,
+    rgb(9, 99, 184) 0.85%,
+    rgb(98, 0, 174) 18.26%,
+    rgb(25, 0, 174) 33.03%,
+    rgb(38, 0, 145) 67.85%, #4731FC 91.59%, #3221F1 100.03%, #21C9F1 102.14%);
+}
+a {
+    text-decoration: none;
+    display: flex;
+    color: inherit;
+}
+button, input, textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+label {
+    display: flex;
+}
+ul {
+    list-style-type: none;
+}
+
+body, html {
+    font-family: "Futura PT", sans-serif;
+    scrollbar-gutter: stable;
+    color: #000;
+    line-height: 130%;
+    font-weight: 400;
+}
+.container {
+    max-width: 1242px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+input {
+    width: 100%;
+    background-color: #F4F4F4;
+    padding: 15px 39px;
+    letter-spacing: 0.1px;
+    border: 1px solid #E8E8E8;
+    border-radius: 39px;
+    font-family: "Futura PT", sans-serif;
+    font-size: 16px;
+}
+input::placeholder {
+    color: #5B6276;
+}
+picture {
+    display: flex;
+}
+
+
+.main-btn {
+    /*border: 2px solid;*/
+    /*border-image-source: linear-gradient(180deg, #000000 0%, #26DF07 0.01%, #E80202 48.96%, #FFE600 100%);*/
+    /*position: relative;*/
+    cursor: pointer;
+    position: relative;
+    font-family: "Futura PT", sans-serif;
+}
+.main-btn span {
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 100%;
+    font-size: 16px;
+    color: #0B1120;
+    background: linear-gradient(101.49deg, #A5A8F5 17.34%, #B8BAF5 53.55%, #9296F7 86.43%);
+    padding: 19px 38px;
+    z-index: 3;
+    display: flex;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.main-btn:after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    z-index: 0;
+    border-radius: 35px;
+    background: linear-gradient(180deg, #000000 0%, #26DF07 0.01%, #E80202 48.96%, #FFE600 100%);
+}
+
+
